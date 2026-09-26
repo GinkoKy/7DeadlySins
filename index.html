@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Circle &mdash; Our Collective Space</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warmBg: '#fbf9f5',
+                        cardCream: '#f3efe6',
+                        earthGreen: '#4a5d4e',
+                        earthSage: '#8a9a86',
+                        terracotta: '#c86d51',
+                        darkCharcoal: '#2c302e',
+                        softGray: '#6c726e'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Plus Jakarta Sans / Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fbf9f5;
+            color: #2c302e;
+        }
+        /* Custom smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fbf9f5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4cfc4;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b5af9f;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-terracotta selection:text-white">
+
+    <header class="fixed top-4 left-0 right-0 z-50 px-4">
+        <div class="max-w-xl mx-auto bg-white/80 backdrop-blur-md border border-stone-200/80 shadow-md shadow-stone-200/50 rounded-full px-6 h-14 flex items-center justify-center gap-6 sm:gap-8 text-sm font-medium text-stone-600">
+            <a href="#home" class="hover:text-terracotta transition-colors">Home</a>
+            <a href="#about" class="hover:text-terracotta transition-colors">About</a>
+            <a href="#gallery" class="hover:text-terracotta transition-colors">Gallery</a>
+            <a href="#members" class="hover:text-terracotta transition-colors">Circle</a>
+            <a href="#contact" class="hover:text-terracotta transition-colors">Connect</a>
+        </div>
+    </header>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-28 pb-16 px-6 relative overflow-hidden">
+        <!-- Decorative soft background blobs -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-amber-100/60 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-emerald-100/50 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-3xl mx-auto text-center z-10">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-200/70 text-stone-700 text-xs font-semibold uppercase tracking-wider mb-6">
+                <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+                Shared Journeys & Moments
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-bold text-stone-900 mb-6 tracking-tight leading-tight">
+                Where stories meet, <br>and <span class="text-terracotta italic font-normal">friendship</span> grows.
+            </h1>
+            <p class="text-stone-600 text-lg sm:text-xl max-w-xl mx-auto mb-10 leading-relaxed font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#gallery" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-stone-900 text-white font-medium hover:bg-terracotta transition-all shadow-md">
+                    Explore Moments
+                </a>
+                <a href="#about" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-cardCream border border-stone-300 text-stone-700 font-medium hover:bg-stone-200/60 transition-all">
+                    Our Story
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-cardCream/60 border-y border-stone-200/60">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-terracotta text-xs font-semibold uppercase tracking-widest block mb-2">Who We Are</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 mb-6 leading-snug">A collective bound by casual laughs and shared coffee.</h2>
+                    <p class="text-stone-600 leading-relaxed mb-6 font-light">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                    </p>
+                    <p class="text-stone-600 leading-relaxed font-light">
+                        Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="h-44 rounded-3xl bg-white border border-stone-200 overflow-hidden shadow-sm">
+                            <img src="https://placehold.co/400x300/f3efe6/8a9a86?text=Vibes" alt="Vibes" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="h-32 rounded-3xl bg-white border border-stone-200 overflow-hidden shadow-sm">
+                            <img src="https://placehold.co/400x200/f3efe6/c86d51?text=Talks" alt="Talks" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-6">
+                        <div class="h-32 rounded-3xl bg-white border border-stone-200 overflow-hidden shadow-sm">
+                            <img src="https://placehold.co/400x200/f3efe6/4a5d4e?text=Coffee" alt="Coffee" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="h-44 rounded-3xl bg-white border border-stone-200 overflow-hidden shadow-sm">
+                            <img src="https://placehold.co/400x300/f3efe6/8a9a86?text=Journey" alt="Journey" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 px-6 bg-warmBg">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-terracotta text-xs font-semibold uppercase tracking-widest block mb-2">Visual Diary</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Moments Captured</h2>
+                <p class="text-stone-600 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis, sem sit amet interdum.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative rounded-3xl overflow-hidden bg-white border border-stone-200 shadow-sm aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/f3efe6/5c6b5e?text=Weekend+Hangout" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white text-sm font-medium">Weekend Hangout Session</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden bg-white border border-stone-200 shadow-sm aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/f3efe6/c86d51?text=Late+Night+Talks" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white text-sm font-medium">Late Night Conversations</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden bg-white border border-stone-200 shadow-sm aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/f3efe6/8a9a86?text=Roadtrip+Vibes" alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white text-sm font-medium">Spontaneous Roadtrip</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden bg-white border border-stone-200 shadow-sm aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/f3efe6/4a5d4e?text=Coffee+Break" alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white text-sm font-medium">Afternoon Coffee Spot</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden bg-white border border-stone-200 shadow-sm aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/f3efe6/d4a373?text=Brainstorming" alt="Gallery 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white text-sm font-medium">Casual Brainstorming</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden bg-white border border-stone-200 shadow-sm aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/f3efe6/780000?text=Celebration" alt="Gallery 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white text-sm font-medium">Small Milestone Party</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="members" class="py-24 px-6 bg-cardCream/60 border-t border-stone-200/60">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-terracotta text-xs font-semibold uppercase tracking-widest block mb-2">The Circle</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Faces of Our Group</h2>
+                <p class="text-stone-600 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-3xl border border-stone-200 text-center shadow-sm">
+                    <div class="w-20 h-20 rounded-full bg-stone-100 mx-auto mb-4 overflow-hidden border-2 border-stone-200">
+                        <img src="https://placehold.co/200x200/f3efe6/4a5d4e?text=Member" alt="Member" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg">Alex Johnson</h3>
+                    <span class="text-xs text-terracotta font-medium uppercase tracking-wider block mb-3">Lorem Ipsum</span>
+                    <p class="text-stone-600 text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-stone-200 text-center shadow-sm">
+                    <div class="w-20 h-20 rounded-full bg-stone-100 mx-auto mb-4 overflow-hidden border-2 border-stone-200">
+                        <img src="https://placehold.co/200x200/f3efe6/c86d51?text=Member" alt="Member" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg">Samira Khan</h3>
+                    <span class="text-xs text-terracotta font-medium uppercase tracking-wider block mb-3">Dolor Sit</span>
+                    <p class="text-stone-600 text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-stone-200 text-center shadow-sm">
+                    <div class="w-20 h-20 rounded-full bg-stone-100 mx-auto mb-4 overflow-hidden border-2 border-stone-200">
+                        <img src="https://placehold.co/200x200/f3efe6/8a9a86?text=Member" alt="Member" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-lg">David Chen</h3>
+                    <span class="text-xs text-terracotta font-medium uppercase tracking-wider block mb-3">Amet Consectetur</span>
+                    <p class="text-stone-600 text-sm font-light leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-warmBg">
+        <div class="max-w-xl mx-auto text-center">
+            <span class="text-terracotta text-xs font-semibold uppercase tracking-widest block mb-2">Say Hello</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">Want to connect?</h2>
+            <p class="text-stone-600 mb-10 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Send us a quick note below.</p>
+            
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4 text-left">
+                <input type="text" placeholder="Your Name" required class="w-full px-4 py-3.5 rounded-2xl bg-white border border-stone-200 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-terracotta transition-colors text-sm">
+                <input type="email" placeholder="Your Email" required class="w-full px-4 py-3.5 rounded-2xl bg-white border border-stone-200 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-terracotta transition-colors text-sm">
+                <textarea rows="4" placeholder="Your Message" required class="w-full px-4 py-3.5 rounded-2xl bg-white border border-stone-200 text-stone-900 placeholder-stone-400 focus:outline-none focus:border-terracotta transition-colors text-sm"></textarea>
+                <button type="submit" class="w-full py-3.5 rounded-2xl bg-stone-900 text-white font-medium hover:bg-terracotta transition-all shadow-md text-sm">Send Message</button>
+            </form>
+            <div id="form-msg" class="hidden mt-4 text-sm text-emerald-700 font-medium">Message sent successfully! (Simulated)</div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-stone-200 bg-cardCream/45 text-center text-xs text-stone-500">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-light">
+            <p>&copy; 2026 The Circle. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#home" class="hover:text-stone-800 transition-colors">Privacy</a>
+                <a href="#home" class="hover:text-stone-800 transition-colors">Terms</a>
+                <a href="#home" class="hover:text-stone-800 transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const msg = document.getElementById('form-msg');
+            msg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                msg.classList.add('hidden');
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
